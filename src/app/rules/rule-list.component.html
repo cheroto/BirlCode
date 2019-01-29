@@ -1,13 +1,14 @@
-<div class='card'>
-    <div class ='card-header'>
-        {{pageTitle}}
-    </div>
+<div class='card'>    
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">{{pageTitle}}    
+            <span class='navbar-text'>      Filter by:
+                <input type='text' [(ngModel)]="filter" ng-change="filterRules()"/>
+            </span>
+        </span>
+    </nav>
     <div class="card-body">
         <div class='row'>
-            <div class='col-md-2'>Filter by:</div>
-            <div class='col-md-4'>
-                <input type='text' [(ngModel)]="filter" ng-change="filterRules()"/>
-            </div>
+
         </div>
         <div class='row'>
             <h4>Filtered by: {{filter}}</h4>

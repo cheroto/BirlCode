@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RuleListComponent } from './rules/rule-list.component';
 import { FormsModule} from '@angular/forms';
+import { FactComponent } from './facts/fact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RuleListComponent
+    RuleListComponent,
+    FactComponent
   ],
   imports: [
     BrowserModule,
